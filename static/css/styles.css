@@ -1,0 +1,58 @@
+#loading-message img {
+	display: block;
+	margin: 15px;
+	height: 25px;
+	width: 400px;
+}
+#loading-message {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#scanport {
+	text-align: center;
+	background-color: rgba(245, 244, 244, 0.952);
+	width: 99.8%;
+}
+
+.openPort {
+	color: rgb(2, 199, 2);
+	font-weight: bold;
+}
+.closePort {
+	color: red;
+	font-weight: bold;
+}
+
+/* Style the search field */
+input[type=text] {
+	padding: 10px;
+	margin: 2px;
+	font-size: 17px;
+	font-weight: bold;
+	border: 2px solid #333333;
+	width: 6.35cm;
+	background: #f1f1f1;
+}
+
+/* Style the submit button */
+button {
+	padding: 10px;
+	margin: 2px;
+	font-size: 17px;
+	width: 7cm;
+	background: #2196f3;
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	border: 2px solid #333333;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #0b7dda;
+}
