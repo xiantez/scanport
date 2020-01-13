@@ -38,11 +38,11 @@ func (c *MainController) Post() {
 		//error
 	}
 	if scannerInfo.TCP == "" {
-		cmd = exec.Command("static/bin/scanport.exe", "-host", scannerInfo.Hostname, "-udp", scannerInfo.UDP)
+		cmd = exec.Command("static/bin/scanport", "-host", scannerInfo.Hostname, "-udp", scannerInfo.UDP)
 	} else if scannerInfo.UDP == "" {
-		cmd = exec.Command("static/bin/scanport.exe", "-host", scannerInfo.Hostname, "-tcp", scannerInfo.TCP)
+		cmd = exec.Command("static/bin/scanport", "-host", scannerInfo.Hostname, "-tcp", scannerInfo.TCP)
 	} else {
-		cmd = exec.Command("static/bin/scanport.exe", "-host", scannerInfo.Hostname, "-tcp", scannerInfo.TCP, "-udp", scannerInfo.UDP)
+		cmd = exec.Command("static/bin/scanport", "-host", scannerInfo.Hostname, "-tcp", scannerInfo.TCP, "-udp", scannerInfo.UDP)
 	}
 	stdout, _ := cmd.Output()
 	formatOut := formatPostData(&stdout)
