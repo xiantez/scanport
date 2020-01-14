@@ -31,20 +31,20 @@
 /* Style the search field */
 input[type=text] {
 	padding: 10px;
-	margin: 2px;
+	margin: 3px;
 	font-size: 17px;
 	font-weight: bold;
 	border: 2px solid #333333;
-	width: 6.35cm;
+	width: 10.35cm;
 	background: #f1f1f1;
 }
 
 /* Style the submit button */
 button {
 	padding: 10px;
-	margin: 2px;
+	margin: 3px;
 	font-size: 17px;
-	width: 7cm;
+	width: 10.98cm;
 	background: #2196f3;
 	font-weight: bold;
 	color: white;
